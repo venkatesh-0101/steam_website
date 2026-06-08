@@ -220,7 +220,13 @@ select {
    padding-inline: 1.5rem;
 
 }
+@media (max-width:768px) {
 
+    .container {
+        padding-inline: 1rem;
+    }
+
+}
 /* =====================================
    TYPOGRAPHY
 ===================================== */
@@ -291,6 +297,22 @@ select {
    -webkit-text-fill-color: transparent;
 
    background-clip: text;
+
+}
+
+@media (max-width:768px) {
+
+    h1 {
+        font-size: 2.75rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1.3rem;
+    }
 
 }
 
@@ -761,6 +783,8 @@ header {
 
 }
 
+
+
 /* =====================================
    HEADER CONTAINER
 ===================================== */
@@ -901,6 +925,23 @@ header {
 
 }
 
+@media (max-width: 768px) {
+
+    .header-container {
+        height: 72px;
+    }
+
+    .logo img {
+        height: 48px;
+    }
+
+    .mobile-menu-btn {
+        width: 44px;
+        height: 44px;
+    }
+
+}
+
 /* =====================================
    CTA NAV BUTTON
 ===================================== */
@@ -932,6 +973,22 @@ header {
    background: var(--secondary);
 
    transform: translateY(-2px);
+
+}
+
+@media (max-width: 768px) {
+
+    .hero-buttons {
+        width: 100%;
+    }
+
+    .primary-btn,
+    .secondary-btn,
+    .sun-btn {
+
+        width: 100%;
+        justify-content: center;
+    }
 
 }
 
@@ -1463,27 +1520,22 @@ footer {
 
 }
 
-.hero-title {
+@media (max-width: 768px) {
 
-   font-size: clamp(3rem,
-         7vw,
-         6rem);
-
-   font-weight: 800;
-
-   line-height: 1.05;
-
-   margin-bottom: 1.5rem;
+    .hero-title {
+        font-size: 2.8rem;
+        line-height: 1.05;
+        max-width: 100%;
+    }
 
 }
+@media (max-width: 768px) {
 
-.hero-description {
-
-   font-size: 1.15rem;
-
-   line-height: 1.9;
-
-   max-width: 650px;
+    .hero-description {
+        font-size: 1rem;
+        line-height: 1.8;
+        max-width: 100%;
+    }
 
 }
 
@@ -1496,6 +1548,20 @@ footer {
    flex-wrap: wrap;
 
    margin-top: 2.5rem;
+
+}
+
+@media (max-width: 768px) {
+
+    .hero-section {
+        min-height: auto;
+        padding: 120px 0 60px;
+    }
+
+    .hero-card,
+    .hero-content {
+        padding: 2rem;
+    }
 
 }
 
@@ -1578,6 +1644,18 @@ footer {
 
    box-shadow:
       0 20px 50px rgba(0, 0, 0, .12);
+
+}
+
+@media (max-width: 768px) {
+
+    .glass-card,
+    .hero-card {
+
+        padding: 1.75rem;
+
+        border-radius: 32px;
+    }
 
 }
 
