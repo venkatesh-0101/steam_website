@@ -101,19 +101,11 @@ body {
 
 /* Tablet */
 
-/* @media (max-width: 1024px) {
-   .site-wrapper {
-      width: 90%;
-   }
-} */
+/*  */
 
 /* Mobile */
 
-/* @media (max-width: 768px) {
-   .site-wrapper {
-      width: 95%;
-   }
-} */
+/*  */
 
 
 
@@ -1403,58 +1395,9 @@ footer {
    RESPONSIVE
 ===================================== */
 
-@media (max-width:1024px) {
 
-   nav{
-      display: none;
-      width: 200px;
-   }
 
-   .navbar {
 
-      display: none;
-
-   }
-
-   .mobile-menu-btn {
-
-      display: flex;
-
-   }
-
-}
-
-@media (max-width:768px) {
-
-   .header-container {
-
-      min-height: 80px;
-
-   }
-
-   .logo img {
-
-      height: 50px;
-
-   }
-
-   .footer-bottom {
-
-      flex-direction: column;
-
-      text-align: center;
-
-   }
-
-   .footer-bottom-links {
-
-      justify-content: center;
-
-      flex-wrap: wrap;
-
-   }
-
-}
 
 /* =======================================================
    YANTROMITRA WEBSITE
@@ -2080,37 +2023,7 @@ footer {
    RESPONSIVE
 ===================================== */
 
-@media (max-width:768px) {
 
-   .hero-title {
-
-      font-size: 2.8rem;
-
-   }
-
-   .hero-buttons {
-
-      flex-direction: column;
-
-      align-items: stretch;
-
-   }
-
-   .cta-card {
-
-      padding: 3rem 1.5rem;
-
-   }
-
-   .whatsapp-float {
-
-      width: 60px;
-
-      height: 60px;
-
-   }
-
-}
 
 /* =======================================================
    YANTROMITRA WEBSITE
@@ -2883,41 +2796,7 @@ details p {
    RESPONSIVE
 ===================================== */
 
-@media (max-width:768px) {
 
-   .form-row {
-
-      grid-template-columns: 1fr;
-
-   }
-
-   .job-card {
-
-      flex-direction: column;
-
-      align-items: flex-start;
-
-   }
-
-   .newsletter-form {
-
-      flex-direction: column;
-
-   }
-
-   .map-container iframe {
-
-      height: 350px;
-
-   }
-
-   .blog-card img {
-
-      height: 220px;
-
-   }
-
-}
 
 /* =======================================================
    YANTROMITRA WEBSITE
@@ -3482,115 +3361,29 @@ select:focus-visible {
    MOBILE OPTIMIZATION
 ===================================== */
 
-@media (max-width:1024px) {
-
-   .two-col {
-
-      grid-template-columns: 1fr;
-
-   }
-
-   .three-col {
-
-      grid-template-columns:
-         repeat(2, 1fr);
-
-   }
-
-   .four-col {
-
-      grid-template-columns:
-         repeat(2, 1fr);
-
-   }
-
-   .hero-section {
-
-      min-height: auto;
-
-      padding-top: 8rem;
-
-      padding-bottom: 5rem;
-
-   }
-
+/* Desktop Navigation */
+.navbar {
+    display: flex;
 }
 
-@media (max-width:768px) {
-
-   .container {
-
-      padding-inline: 1rem;
-
-   }
-
-   .three-col,
-   .four-col {
-
-      grid-template-columns: 1fr;
-
-   }
-
-   .hero-title {
-
-      font-size: 2.5rem;
-
-   }
-
-   .hero-description {
-
-      font-size: 1rem;
-
-   }
-
-   .section-title {
-
-      font-size: 2rem;
-
-   }
-
-   .glass-card,
-   .feature-card,
-   .contact-card,
-   .blog-card {
-
-      padding: 1.5rem;
-
-   }
-
-   .slider-arrow {
-
-      display: none;
-
-   }
-
+/* Hide hamburger by default */
+.mobile-menu-btn {
+    display: none;
 }
 
-@media (max-width:480px) {
+/* When screen is small enough to show hamburger */
+@media (max-width: 1024px) {
 
-   .hero-title {
+    .navbar,
+    nav {
+        display: none;
+    }
 
-      font-size: 2rem;
-
-   }
-
-   .primary-btn,
-   .secondary-btn,
-   .sun-btn {
-
-      width: 100%;
-
-      justify-content: center;
-
-   }
-
-   .hero-buttons {
-
-      width: 100%;
-
-   }
-
+    .mobile-menu-btn {
+        display: flex;
+    }
 }
+
 
 /* =====================================
    PRINT STYLES
